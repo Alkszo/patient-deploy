@@ -1,0 +1,481 @@
+@font-face {
+  font-family: 'socialIcon';
+  src:
+  url('fonts/Socialico.otf')
+  format('opentype');
+  src:
+  url('fonts/Socialico.ttf')
+  format('truetype')
+}
+
+/* font-family: Verdana, sans-serif; font-family: 'Merriweather', serif;*/
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background-color: rgb(240, 230, 230);
+  margin: 0;
+  padding: 0;
+}
+
+.down-menu, .top-menu {
+  font-family: 'Merriweather', serif;
+  background-color: white;
+}
+
+#root {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 75%;
+  background-color: white;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+  background-image: url("img/bannerBa.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 75vh;
+}
+
+#home h3 {
+  color: white;
+  font-size: 1.4vw;
+  margin: 0;
+  padding: 1.5% 1% 0 30%;
+}
+
+#advocate {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  padding-left: 60%;
+  padding-top: 2%;
+  margin: 0;
+}
+
+#postulates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin: 2% 1% 0 60%;
+  color: white;
+  text-align: center;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+
+.postulate {
+  height: 25%;
+  background-color: rgb(109, 209, 231, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postulate:hover {
+  cursor: pointer;
+  background-color: rgb(109, 209, 231);
+}
+
+h1 {
+  font-size: 3vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home, .support, .team, .recommendations, .involvement {
+  text-align: center;
+  background-color: #c5e2e8;
+  padding: 0 0 2% 0;
+}
+
+.supporter-details img {
+  height: 200px;
+}
+
+.supporter-details p {
+ padding-left: 10%;
+ text-align: left;
+ font-size: 1.25vw;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 7%;
+  font-size: 1.3vw;
+}
+
+.recommendation a {
+  padding: 4px;
+  background-color: rgba(122, 221, 243, 0.7);
+}
+
+.recommendation a:visited {
+color: rgb(90, 9, 165);
+}
+
+.recommendation a:hover {
+  background-color: rgb(122, 221, 243);
+}
+
+.involvement {
+  font-size: 1.3vw;
+}
+
+.involvement p {
+  text-align: left;
+  margin: 5% 0 5% 7%;
+}
+
+.involvement a {
+  color: #5f1c0e;
+}
+
+.supporter-details {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  width: 80%;
+}
+
+.teamster-details {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  width: 80%;
+}
+
+.teamster-details img {
+  height: 220px;
+}
+
+ .teamster-description {
+   display: flex;
+   flex-direction: column;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 1.5vw;
+  font-weight: 600;
+ }
+
+ .teamster-description p {
+   margin-top: 0%;
+ }
+
+ .teamster-bio {
+   font-size: 1.25vw;
+   text-align: justify;
+   font-weight: 400;
+ }
+
+ .legal-note {
+   margin: 10%;
+ }
+
+.active {
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #006569;
+  font-size: 1.4vw;
+  width: 100%;
+}
+
+.down-menu a {
+  color: #006569;  
+}
+
+.social-link {
+  font-family: 'socialIcon';
+}
+
+.top-menu li:hover {
+  transform: scale(1.1);
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  margin-left: 5%;
+}
+
+.down-menu a:hover {
+  transform: scale(1.1);
+  color: #006569;
+}
+
+.top-menu ul {
+  height: 13vh;
+}
+
+.navbar ul {  
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0;
+  padding: 0 1% 0 1%;
+}
+
+.navbar li {
+  align-self: center;
+  width: 20%;  
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;    
+}
+
+.social-links a {
+  font-size: 3.25vw;
+  color: #578b8d;
+}
+
+.down-menu ul {
+  height: 12vh;
+}
+
+.down-menu a:link {
+  text-decoration: none;
+}
+
+.navbar a:link {
+  text-decoration: none;
+}
+
+.navbar img {
+  width: 100%;
+}
+
+.document {
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  margin: 0;
+}
+
+/*breakpoints*/
+
+/*vsmal*/
+@media only screen and (max-device-width : 320px) {
+  #root {
+      width: 100%;
+  }
+  #home {
+      background-image: url("img/bannerBb.jpg")
+  }
+  #home h3 {
+      font-size: 3vw;
+      padding: 2.5% 1.5% 2.5% 35%;
+  }
+  #advocate {
+      font-size: 3vw;
+      padding-left: 35%;
+      padding-bottom: 2.5%;
+  }
+  .navbar a {
+      font-size: 2.25vw;
+  }
+  .social-links a {
+      font-size: 9vw;
+  }
+  #postulates {
+      height: 80%;
+      font-size: 3vw;
+      margin: 2% 5% 0 40%;
+  }
+  #top-menu ul{
+      height: 8vh;
+  }    
+  #down-menu ul{
+      height: 8vh;
+  }
+  .supporter-details p, .teamster-description, .recommendation, .involvement {
+    font-size: 2.75vw;
+  }
+  .teamster-bio {
+    font-size: 2.25vw;
+  }
+  .teamster-details img {
+    height: 100px;
+  }
+  .supporter-details img {
+    height: 125px;
+  }
+  h3 {
+    font-size: 2.75vw;
+  }
+}
+
+/*smaller*/
+@media only screen and (min-device-width : 321px) and (max-device-width : 500px) {
+  #root {
+      width: 100%;
+  }
+  #home {
+      background-image: url("img/bannerBb.jpg");
+      height: 80vh;
+  }
+  #home h3 {
+      font-size: 3vw;
+      padding: 1.5% 1.5% 2.5% 35%;
+  }
+  #advocate {
+      font-size: 2.5vw;
+      padding-left: 35%;
+      padding-bottom: 2.5%;
+  }
+  .navbar a {
+      font-size: 2.25vw;
+  }
+  .social-links a {
+      font-size: 7vw;
+  }
+  #postulates {
+      height: 70%;
+      font-size: 3vw;
+      margin: 2% 5% 0 40%;
+  }
+  #top-menu ul{
+      height: 10vh;
+  }    
+  #down-menu ul{
+      height: 10vh;
+  }
+  .supporter-details p, .teamster-description {
+    font-size: 2.25vw;
+  }
+  .teamster-bio, .recommendation, .involvement {
+    font-size: 2vw;
+  }
+  .supporter-details img {
+    height: 150px;
+  }
+  .teamster-details img {
+    height: 125px;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+}
+
+
+/*small*/
+@media only screen and (min-device-width : 501px) and (max-device-width : 768px) {
+  #root {
+      width: 100%;
+  }
+  #home h3 {
+      font-size: 2vw;
+  }
+  .navbar a {
+      font-size: 2vw;
+  }
+  .social-links a {
+      font-size: 5.5vw;
+  }
+  #postulates {
+      height: 65%;
+      font-size: 2vw;
+  }
+  #advocate {
+      font-size: 1.8vw;
+  }
+  .supporter-details p, .teamster-description, .recommendation, .involvement {
+    font-size: 2.25vw;
+  }
+  .teamster-bio {
+    font-size: 1.75vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  .teamster-details img {
+    height: 175px;
+  }
+}
+
+/*medium*/
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+  #root {
+      width: 90%;
+  }
+  #home h3 {
+      font-size: 1.6vw;
+  }
+  .navbar a {
+      font-size: 1.75vw;
+  }
+  .social-links a {
+      font-size: 4.5vw;
+  }
+  #postulates {
+      height: 60%;
+      font-size: 1.5vw;
+  }
+  .supporter-details p, .teamster-description {
+    font-size: 1.75vw;
+  }
+  .teamster-bio, .recommendation, .involvement {
+    font-size: 1.5vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+}
+
+/*larger*/
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1200px) {
+  #root {
+      width: 82%;
+  }
+  #home h3 {
+      font-size: 1.5vw;
+  }
+  .navbar a {
+      font-size: 1.45vw;
+  }
+  .social-links a {
+      font-size: 3.5vw;
+  }
+  #postulates {
+      height: 55%;
+  }
+  .supporter-details p, .teamster-description {
+    font-size: 1.5vw;
+  }
+}
