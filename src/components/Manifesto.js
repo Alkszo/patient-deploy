@@ -1,12 +1,12 @@
 import PDFViewer from './PDFViewer';
 import PDFJSBackend from './PDFJs';
-import doc from './ZeroCovidInstrument.pdf';
+import doc from './europe-a-patient-manifesto.pdf';
 
-const ZeroCovid = () => {
+const Manifesto = () => {
     return (
         <PDFViewer backend={PDFJSBackend}
         src={doc}/>
     )
 }
 
-export default ZeroCovid;
+export default Manifesto

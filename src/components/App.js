@@ -10,20 +10,15 @@ import Recommendations from './Recomendations';
 import GetInvolved from './GetInvolved';
 import Taxonomy from './Taxonomy';
 import ZeroCovid from './ZeroCovid';
+import JakaPolske from './JakaPolske';
+import Manifesto from './Manifesto';
 
 
 function App() {
-  const [pdfOpen, setPdfOpen] = useState(false)
-
-  /*
-  useEffect(() => {
-    setPdfOpen(false)
-  });
-*/
 
   return (
     <>
-    {!pdfOpen && <Navbar />}
+    <Navbar />
     <Switch>     
       <Route exact path='/'>
         <Home />
@@ -35,7 +30,7 @@ function App() {
         <Team />
       </Route>
       <Route path='/recommendations'>
-        <Recommendations openPdf={setPdfOpen}/>
+        <Recommendations />
       </Route>
       <Route path='/involvement'>
         <GetInvolved />
@@ -44,10 +39,16 @@ function App() {
         <Taxonomy />
       </Route>
       <Route path='/zero-covid-instrument-proposal'>
-        <ZeroCovid openPdf={setPdfOpen}/>
+        <ZeroCovid />
+      </Route>
+      <Route path='/jaka-polske-chcemy-odbudowac'>
+        <JakaPolske />
+      </Route>
+      <Route path='/manifesto'>
+        <Manifesto />
       </Route>
     </Switch>
-    {!pdfOpen && <DownMenu />}
+    <DownMenu />
     </>
    
   );

@@ -1,12 +1,12 @@
 import PDFViewer from './PDFViewer';
 import PDFJSBackend from './PDFJs';
-import doc from './ZeroCovidInstrument.pdf';
+import doc from './jaka-Polske-chcemy-odbudowac.pdf';
 
-const ZeroCovid = () => {
+const JakaPolske = () => {
     return (
         <PDFViewer backend={PDFJSBackend}
         src={doc}/>
     )
 }
 
-export default ZeroCovid;
+export default JakaPolske
