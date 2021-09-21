@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Switch, Route } from 'react-router';
 import './App.css';
 import Navbar from './Navbar';
@@ -12,6 +12,7 @@ import Taxonomy from './Taxonomy';
 import ZeroCovid from './ZeroCovid';
 import JakaPolske from './JakaPolske';
 import Manifesto from './Manifesto';
+import Booklet from './Booklet';
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
       </Route>
       <Route path='/manifesto'>
         <Manifesto />
+      </Route>
+      <Route path='/conference'>
+        <Booklet />
       </Route>
     </Switch>
     <DownMenu />

@@ -5,11 +5,12 @@ const DownMenu = () => {
     return(
         <div className="down-menu navbar">
             <ul>
-                <li className="nav-link"><NavLink  activeClassName="active" to='/involvement'>Get Involved</NavLink></li>
+                <li className="nav-link"><NavLink  activeClassName="active" to='/conference'>Healing Patient Europe, conference</NavLink></li>
                 <li>
                     <div className="social-links">
-                        <a className="social-link" href="https://www.facebook.com/europeapatient" target="_blank">F</a>
-                        <a className="social-link" href="https://twitter.com/europeapatient" target="_blank">L</a>
+                        <a className="social-link-plus" href="mailto: europe.a.patient@gmail.com">M</a>
+                        <a className="social-link" href="https://www.facebook.com/europeapatient" target="_blank"  rel="noreferrer">F</a>
+                        <a className="social-link" href="https://twitter.com/europeapatient" target="_blank"  rel="noreferrer">L</a>                        
                     </div>
                 </li>
             </ul> 

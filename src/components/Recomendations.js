@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
-import Taxonomy from './Taxonomy';
+import { Link } from 'react-router-dom';
 
 const Recommendations = ({openPdf}) => {
     const recommended = [{title: 'European Job Guarantee', time: 'Autumn 2020', link: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3715344'},
@@ -20,7 +19,7 @@ const Recommendations = ({openPdf}) => {
              <p>Spring 2020</p>
             </div>
             {recommended.map(recommendation => <div className="recommendation">                
-            <a href={recommendation.link} target="_blank">{recommendation.title}</a>
+            <a href={recommendation.link} target="_blank"  rel="noreferrer">{recommendation.title}</a>
             <p>{recommendation.time}</p>
             </div>)}
             <div className="recommendation">

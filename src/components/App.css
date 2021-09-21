@@ -8,6 +8,16 @@
   format('truetype')
 }
 
+@font-face {
+  font-family: 'socialIconPlus';
+  src:
+  url('fonts/Socialico Plus.otf')
+  format('opentype');
+  src:
+  url('fonts/Socialico Plus.ttf')
+  format('truetype')
+}
+
 /* font-family: Verdana, sans-serif; font-family: 'Merriweather', serif;*/
 
 html {
@@ -215,6 +225,10 @@ color: rgb(90, 9, 165);
 
 .social-link {
   font-family: 'socialIcon';
+}
+
+.social-link-plus {
+  font-family: 'socialIconPlus';
 }
 
 .top-menu li:hover {
