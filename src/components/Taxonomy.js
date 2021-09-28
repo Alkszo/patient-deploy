@@ -3,9 +3,11 @@ import PDFJSBackend from './PDFJs';
 import doc from './Taxonomy.pdf';
 
 const Taxonomy = () => {
-    return (
+    return (        
+        <div className="doc-viewer">
         <PDFViewer backend={PDFJSBackend}
         src={doc}/>
+        </div>
     )
 }
 

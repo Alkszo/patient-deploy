@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
-  height: 100%;
+  height: auto;
   background-color: rgb(240, 230, 230);
   margin: 0;
   padding: 0;
@@ -40,6 +40,10 @@ body {
 .down-menu, .top-menu {
   font-family: 'Merriweather', serif;
   background-color: white;
+}
+
+.doc-viewer {
+  height: 75vh;
 }
 
 #root {
@@ -56,6 +60,15 @@ body {
 .app {
   height: 100%;
   width: 100%;
+}
+
+#banner {
+  width: 100%;
+}
+
+.bookletbanner {
+  width: 100%;
+  height: 50vh;
 }
 
 #home {

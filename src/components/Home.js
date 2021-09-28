@@ -1,8 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
+import banner from './conference-banner.jpg';
+import mobileBanner from './conference-banner-mobile.png';
 
 const Home = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResizeWindow = () => setWidth(window.innerWidth);
+         window.addEventListener("resize", handleResizeWindow);
+         return () => {
+           window.removeEventListener("resize", handleResizeWindow);
+         };
+    }, []);
+
     return(
+    <>
+    <Link to='/conference'><img id="banner" src={width > 650 ? banner : mobileBanner} alt="conference-banner"></img></Link>
      <div id="home">
+     
          <h3>Europe, a Patient is a pan-European, non-partisan coalition of leaders in economics, politics, culture and faith.</h3>
          <p id="advocate">We advocate for:</p>
          <div id="postulates">
@@ -17,6 +33,7 @@ const Home = () => {
                 </div> 
          </div>
      </div>       
+     </>
     )
 }
 

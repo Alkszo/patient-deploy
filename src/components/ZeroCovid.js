@@ -4,8 +4,10 @@ import doc from './ZeroCovidInstrument.pdf';
 
 const ZeroCovid = () => {
     return (
+        <div className="doc-viewer">
         <PDFViewer backend={PDFJSBackend}
         src={doc}/>
+        </div>
     )
 }
 
