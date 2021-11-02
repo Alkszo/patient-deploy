@@ -5,7 +5,7 @@ const DownMenu = () => {
     return(
         <div className="down-menu navbar">
             <ul>
-                <li className="nav-link"><NavLink  activeClassName="active" to='/conference'>Healing Patient Europe, conference</NavLink></li>
+                <li className="nav-link"><a href="https://www.europeapatient.com" target="_blank"  rel="noreferrer">Healing Patient Europe, conference</a></li>
                 <li>
                     <div className="social-links">
                         <a className="social-link-plus" href="mailto: europe.a.patient@gmail.com">M</a>
@@ -19,3 +19,4 @@ const DownMenu = () => {
 }
 
 export default DownMenu;
+
